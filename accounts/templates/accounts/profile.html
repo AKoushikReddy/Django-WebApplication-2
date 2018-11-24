@@ -1,0 +1,56 @@
+{% extends 'accounts\master2.html' %}
+<html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'newdesign1.css' %}"/>
+       <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+{% block content %}
+<div>
+    <h4 style="text-align:center;padding-right:100px;padding-top:120px;font-size:30px;ont-family: 'Ubuntu', sans-serif;">You Can Update Your Profile Here!</h4>
+    <div class="container-fluid" style="margin-right:550px;margin-top:70px;opacity:0.9">
+        <div class="row">
+            <div class="col-md-4 col-md-push-4" style=" height:450px; width:850px;">
+                <div class="panel panel-default" id ="paneldefault">
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                         <div class="form-group">
+                            <div class="control-label col-sm-2" style="color:#272727;font-family: 'Ubuntu', sans-serif;font-size:20px;">
+                                Interests:
+                            </div>
+                            <div class="col-sm-10" style="padding-left:30px;padding-top:20px;width:300px;">
+                                {{ form.interests}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-sm-2" style="color:#272727;font-family: 'Ubuntu', sans-serif;font-size:20px;">
+                                Description:
+                            </div>
+                            <div class="col-sm-10" style="padding-left:30px;padding-top:18px;">
+                                {{ form.shortbio}}
+                            </div>
+                        </div>
+                            <div class="form-group">
+                            <div class="control-label col-sm-2" style="color:#272727;font-family: 'Ubuntu', sans-serif;font-size:20px;width:400px;">
+                                Upload your Profile Pic:
+                            </div>
+                            <div class="col-sm-10" style="padding-left:250px;padding-top:5px;">
+                                {{ form.image}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success" style="margin-top:5px;">Update</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+</div>
+        </div>
+
+    </div></div>
+{% endblock %}
+</html>

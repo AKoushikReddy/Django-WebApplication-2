@@ -1,0 +1,48 @@
+h1{
+color:black;
+font-family: Fjalla One, sans-serif;
+font-size:70px;
+margin-top:50px;
+text-align: center;
+margin-right:15px;
+color:#d1e081;
+}
+#res{
+color:#52511f
+}
+
+h3{
+padding-left:30px;
+padding-bottom:20px;
+padding-top:0px;
+font-size:40px;
+color:#807a4c;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.row{
+margin-top:100px;
+padding-top:150px
+padding-right:30px;
+}
+
+#paneldefault{
+background:#ffe8cc;
+opacity:0.75;
+}
+
+.panel-footer{
+color:#807a4c;
+font-family: 'Ubuntu', sans-serif;
+background:#fde793;
+ color:White;
+font-size:18px;
+}
+
+.register{
+font-weight: bold;
+color:white;
+text-decoration: underline;
+}
+
+
